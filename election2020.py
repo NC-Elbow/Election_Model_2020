@@ -20,7 +20,14 @@ states = ['AL','AK','AZ','AR','CA','CO','CT','DC','DE','FL','GA','HI','ID','IL',
 votes = [9,3,11,6,55,9,7,3,3,29,16,4,4,20,11,6,6,8,8,4,10,11,16,10,6,10,3,5,6,
          4,14,5,29,15,3,18,7,7,20,4,9,3,11,38,6,3,13,12,5,10,3]
 
+probabilities = [[.5,.5 ]]*51
+
 
 for k in range(len(states)):
-    electoral_dict[states[k]] = votes[k]
+    electoral_dict[states[k]] = (votes[k], probabilities[k])
+    
+    
+    
+    
+    
     
